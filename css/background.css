@@ -1,0 +1,23 @@
+  .bgimg-aralin1,
+  .bgimg-aralin2,
+  .bgimg-aralin3,
+  .bgimg-aralin4,
+  .bgimg-aralin5 {
+    position: relative;
+    /* opacity: 0.5; */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+
+  .bgimg-aralin1 {
+    background-image: url("../resources/Aralin1_Background_Image.png");
+    min-height: 500px;
+  }
+
+  .bgimg-aralin2 {
+    background-image: url("../resources/Aralin2_Background_Image.png");
+    min-height: 500px;
+  }

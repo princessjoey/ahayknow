@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AHA'YKNOW | Tungkol: Para sa mga mag-aaral</title>
+
+    <!-- W3.CSS -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Color Library -->
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2020.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2017.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2018.css">
+
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: "Poppins", sans-serif
+    }
+
+    body {
+      font-size: 16px;
+    }
+
+    .w3-half img {
+      margin-bottom: -6px;
+      margin-top: 16px;
+      opacity: 0.8;
+      cursor: pointer
+    }
+
+    .w3-half img:hover {
+      opacity: 1
+    }
+
+    div {
+      text-align: justify;
+      text-justify: inter-word;
+    }
+
+    .w3-custom-brown {
+      color: #fff !important;
+      background-color: #3B3421 !important
+    }
+
+    .w3-custom-light-black {
+      color: #fff !important;
+      background-color: #1F1F1E !important
+    }
+  </style>
+
+</head>
+
+<body class="w3-2017-primrose-yellow">
+
+  <!-- Start of Navbar -->
+  <div class="w3-top">
+
+    <div class="w3-bar w3-custom-light-black w3-card">
+
+      <a class="w3-bar-item w3-padding-medium w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white"
+        href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+
+      <a href="index.html" class="w3-bar-item w3-padding-medium w3-button w3-hover-white w3-2017-primrose-yellow"><b>AHA'YKNOW</b></a>
+
+      <div class="w3-dropdown-hover w3-hover-white w3-hide-small">
+        <button class="w3-button w3-padding-medium w3-hover-white">Tungkol <i class="fa fa-caret-down"></i></button>
+        <div class="w3-dropdown-content w3-bar-block w3-2017-primrose-yellow">
+          <a href="ang_ahayknow.html" class="w3-bar-item w3-button w3-hover-white w3-mobile">Sa ang "AHA'YKNOW"</a>
+          <a href="magaaral.html" class="w3-bar-item w3-button w3-hover-white w3-mobile">Sa mga mag-aaral</a>
+          <a href="likha.html" class="w3-bar-item w3-button w3-hover-white w3-mobile">Sa may likha</a>
+        </div>
+      </div>
+
+      <a href="paalala.html" class="w3-bar-item w3-padding-medium w3-button w3-hover-white w3-hide-small">Mga Paalala</a>
+      <a href="hanay.html" class="w3-bar-item w3-padding-medium w3-button w3-hover-white w3-hide-small">Hanay ng mga Gawain</a>
+
+      <div class="w3-dropdown-hover w3-hover-white w3-hide-small">
+        <button class="w3-button w3-padding-medium w3-hover-white">Mga Aralin <i class="fa fa-caret-down"></i></button>
+        <div class="w3-dropdown-content w3-bar-block w3-2017-primrose-yellow">
+          <a href="aralin/aralinuno.html" class="w3-bar-item w3-button w3-hover-white w3-mobile">Aralin 1</a>
+          <a href="#" class="w3-bar-item w3-button w3-hover-white w3-mobile" onclick="document.getElementById('aralin02pass').style.display='block'">Aralin 2</a>
+          <a href="aralin/aralintres.html" class="w3-bar-item w3-button w3-hover-white w3-disabled w3-mobile">Aralin 3</a>
+          <a href="aralin/aralinquatro.html" class="w3-bar-item w3-button w3-hover-white w3-disabled w3-mobile">Aralin 4</a>
+          <a href="aralin/aralinsingko.html" class="w3-bar-item w3-button w3-hover-white w3-disabled w3-mobile">Aralin 5</a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <!-- End of Navbar -->
+
+  <!-- Start of Navbar - Responsive -->
+  <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+  <div id="navDemo" class="w3-bar-block w3-custom-light-black w3-anima w3-hide w3-hide-large w3-hide-medium w3-top"
+    style="margin-top:40px">
+
+    <a href="ang_ahayknow.html" class="w3-bar-item w3-padding-medium w3-button w3-hover-white w3-mobile">Ang AHA'YKNOW</a>
+
+    <div class="w3-dropdown-hover w3-hover-white w3-mobile">
+      <button class="w3-button w3-padding-medium w3-hover-white w3-center">Tungkol <i class="fa fa-caret-down"></i></button>
+      <div class="w3-dropdown-content w3-bar-block w3-2017-primrose-yellow">
+        <a href="ang_ahayknow.html" class="w3-bar-item w3-button w3-hover-white w3-mobile">Sa ang "AHA'YKNOW"</a>
+        <a href="magaaral.html" class="w3-bar-item w3-button w3-hover-white w3-mobile">Sa mga mag-aaral</a>
+        <a href="likha.html" class="w3-bar-item w3-button w3-hover-white w3-mobile">Sa may likha</a>
+      </div>
+    </div>
+
+    <a href="paalala.html" class="w3-bar-item w3-padding-medium w3-button w3-hover-white w3-mobile">Mga Paalala</a>
+    <a href="hanay.html" class="w3-bar-item w3-padding-medium w3-button w3-hover-white w3-mobile">Hanay ng mga Gawain</a>
+
+    <div class="w3-dropdown-hover w3-hover-white w3-mobile">
+      <button class="w3-button w3-padding-medium w3-hover-white w3-center">Mga Aralin <i class="fa fa-caret-down"></i></button>
+      <div class="w3-dropdown-content w3-bar-block w3-2017-primrose-yellow">
+       <a href="aralin/aralinuno.html" class="w3-bar-item w3-button w3-hover-white w3-mobile">Aralin 1</a>
+       <a href="#" class="w3-bar-item w3-button w3-hover-white w3-mobile" onclick="document.getElementById('aralin02pass').style.display='block'">Aralin 2</a>
+        <a href="aralin/aralintres.html" class="w3-bar-item w3-button w3-hover-white w3-disabled w3-mobile">Aralin 3</a>
+        <a href="aralin/aralinquatro.html" class="w3-bar-item w3-button w3-hover-white w3-disabled w3-mobile">Aralin 4</a>
+        <a href="aralin/aralinsingko.html" class="w3-bar-item w3-button w3-hover-white w3-disabled w3-mobile">Aralin 5</a>
+      </div>
+    </div>
+
+  </div>
+  <!-- End of Navbar - Responsive -->
+
+  <!-- Start of page content -->
+
+<!-- <div class="w3-container w3-padding-64 w3-margin w3-center">
+  <img src="resources/aha_magaaral.png" alt="Para sa mga mag-aaral" style="width:100%">
+</div> -->
+
+<div class="w3-panel w3-padding-16">
+  <!-- Blank Space -->
+</div>
+
+       <div class="w3-panel w3-margin">
+        <h1 class="w3-xxxlarge w3-text-black" style="text-shadow:1px 1px 0 #444">
+        <b>Para sa mga mag-aaral:</b></h1>
+      </div>
+
+      <div class="w3-container w3-margin w3-padding-16 w3-white">
+        <p class="w3-xlarge">&nbsp;&nbsp;&nbsp;&nbsp;Ang bawat Pagtatayang Gawain na nilalaman ng mga Aralin ay nakapokus sa kompetensing kailangan matamo ng bawat isa. Karagdagan pa rito, ang bawat aralin ay naglalaman ng ibat-ibang uri ng Pagtatayang Gawain na siyang kailangan matapos sa loob lamang ng ating silid-aralan.</p>
+        <p class="w3-xlarge">&nbsp;&nbsp;&nbsp;&nbsp;Tandaan na sa bawat Gawain, ang mga mag-aaral ay inaasahang matamo ang <b>kaukulang marka</b> na kinakailangan upang magpatuloy pa sa susunod pang mga Aralin.</p>
+        <p class="w3-xlarge">&nbsp;&nbsp;&nbsp;&nbsp;Ang ganitong paraan ay siyang inilagay sa Website upang lubusang masukat ang kasanayan ng mga mag-aaral sa bawat Aralin.</p>
+        <p class="w3-xlarge">&nbsp;&nbsp;&nbsp;&nbsp;Sa huli, kung ang mag-aaral ay nagkulang sa puntos na kailangan matamo, ang pagsagot sa Panulong na Pagtataya ang siyang magiging gabay upang magpatuloy sa aralin.</p>
+      </div>
+
+<div class="w3-panel w3-padding-16">
+  <!-- Blank Space -->
+</div>
+
+  <!-- End of page content -->
+  <div class="w3-bottom w3-custom-light-black w3-container w3-padding-medium">
+    <h5>AHA'YKNOW</h5>
+  </div>
+
+    <!-- Start of Aralin Modal (For Password)  -->
+    <!-- Aralin 2  -->
+    <div id="aralin02pass" class="w3-modal">
+      <div class="w3-modal-content w3-card-4">
+        <header class="w3-container w3-2017-primrose-yellow">
+          <!-- <span onclick="document.getElementById('id01').style.display='none'"
+            class="w3-button w3-display-topright">&times;</span> -->
+          <h3><b>Ilagay ang password.</b></h3>
+        </header>
+        <div class="w3-container">
+          <form class="w3-container" action="/action_page.php">
+            <div class="w3-section">
+              <input class="w3-input w3-border" type="password" placeholder="Password" name="psw" required>
+            </div>
+          </form>
+        </div>
+        <footer class="w3-container w3-2017-primrose-yellow">
+          <button class="w3-button w3-block w3-custom-light-black w3-hover-white w3-section w3-padding" type="submit">I-access ang aralin</button>
+        </footer>
+      </div>
+    </div>
+    <!-- End of Aralin Modal -->
+
+<!-- Scripts -->
+<script type="text/javascript">
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+</script>
+
+  <script>
+    // Get the modal
+    var modal = document.getElementById('aralin02pass');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+</html>

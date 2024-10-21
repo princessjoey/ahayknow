@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AHA'YKNOW | Aralin 3 | Maikling Pagtataya</title>
+
+  <!-- W3.CSS -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Color Library -->
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2020.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2017.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2018.css">
+
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: "Poppins", sans-serif
+    }
+
+    body {
+      font-size: 16px;
+    }
+
+    .w3-half img {
+      margin-bottom: -6px;
+      margin-top: 16px;
+      opacity: 0.8;
+      cursor: pointer
+    }
+
+    .w3-half img:hover {
+      opacity: 1
+    }
+
+    div {
+      text-align: justify;
+      text-justify: inter-word;
+    }
+  </style>
+
+  <script type="text/javascript" src="gawain_gramatika.js"></script>
+
+</head>
+
+<!-- Parallax -->
+<link rel="stylesheet" type="text/css" href="../css/parallax.css">
+
+
+<body class="w3-2017-primrose-yellow">
+
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+
+      <a class="w3-bar-item w3-padding-medium w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white"
+        href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+
+      <a href="../index.html"
+        class="w3-bar-item w3-padding-medium w3-button w3-hover-white w3-2017-primrose-yellow"><b>AHA'YKNOW</b></a>
+
+      <a href="../aralin/aralinuno.html"
+        class="w3-bar-item w3-padding-medium w3-button w3-hover-white w3-hide-small">Aralin 3</a>
+
+      <!--         <a href="#angahayknow" class="w3-bar-item w3-padding-medium w3-button w3-hover-white w3-hide-small">Ang AHA'YKNOW</a>
+        <a href="#magaaral" class="w3-bar-item w3-padding-medium w3-button w3-hover-white w3-hide-small">Para sa mga mag-aaral</a>
+        <a href="#paalala" class="w3-bar-item w3-padding-medium w3-button w3-hover-white w3-hide-small">Mga Paalala</a>
+        <a href="#hanay" class="w3-bar-item w3-padding-medium w3-button w3-hover-white w3-hide-small">Hanay ng mga Gawain</a> -->
+
+      <!-- <div class="w3-dropdown-hover w3-hover-white w3-hide-small">
+        <button class="w3-button w3-padding-medium w3-hover-white">Mga Aralin <i class="fa fa-caret-down"></i></button>
+        <div class="w3-dropdown-content w3-bar-block w3-2017-primrose-yellow">
+          <a href="../aralin/aralinuno.html" class="w3-bar-item w3-button w3-hover-white">Aralin 1</a>
+          <a href="#" class="w3-bar-item w3-button w3-hover-white w3-disabled">Aralin 2</a>
+          <a href="#" class="w3-bar-item w3-button w3-hover-white w3-disabled">Aralin 3</a>
+          <a href="#" class="w3-bar-item w3-button w3-hover-white w3-disabled">Aralin 4</a>
+          <a href="#" class="w3-bar-item w3-button w3-hover-white w3-disabled">Aralin 5</a>
+        </div>
+      </div> -->
+
+      <!-- <a href=".#" class="w3-bar-item w3-padding-medium w3-button w3-hover-white w3-hide-small">Tungkol sa may akda</a> -->
+
+    </div>
+  </div>
+
+  <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+  <div id="navDemo" class="w3-bar-block w3-black w3-anima w3-hide w3-hide-large w3-hide-medium w3-top"
+    style="margin-top:40px">
+
+    <a href="../aralin/aralinuno.html" class="w3-bar-item w3-padding-medium w3-button w3-hover-white w3-mobile">Aralin
+      3</a>
+
+    <!--       <a href="#angahayknow" class="w3-bar-item w3-padding-medium w3-button w3-hover-white w3-mobile">Ang AHA'YKNOW</a>
+      <a href="#magaaral" class="w3-bar-item w3-padding-medium w3-button w3-hover-white w3-mobile">Para sa mga mag-aaral</a>
+      <a href="#paalala" class="w3-bar-item w3-padding-medium w3-button w3-hover-white w3-mobile">Mga Paalala</a>
+      <a href="#" class="w3-bar-item w3-padding-medium w3-button w3-hover-white w3-mobile">Hanay ng mga Gawain</a> -->
+
+    <!-- <div class="w3-dropdown-hover w3-hover-white w3-mobile">
+      <button class="w3-button w3-padding-medium w3-hover-white w3-center">Mga Aralin <i
+          class="fa fa-caret-down"></i></button>
+      <div class="w3-dropdown-content w3-bar-block w3-2017-primrose-yellow">
+        <a href="#" class="w3-bar-item w3-button w3-hover-white w3-mobile">Aralin 1</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-white w3-disabled">Aralin 2</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-white w3-disabled">Aralin 3</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-white w3-disabled">Aralin 4</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-white w3-disabled">Aralin 5</a>
+      </div>
+    </div> -->
+
+    <!-- <a href="#" class="w3-bar-item w3-padding-medium w3-button w3-hover-white w3-mobile">Tungkol sa may akda</a> -->
+
+  </div>
+
+  <!-- Start of page content -->
+  <div class="w3-padding-64">
+
+    <!-- Introduction -->
+    <div class="w3-padding-16 w3-container w3-center w3-mobile">
+
+      <h2 class="w3-wide"><b>Aralin 3</b></h2>
+      <h1 class="w3-xxlarge"><b>Panitikan at Gramatika</b></h1>
+      <h2 class="w3-wide"><b><i>SUBUKIN PA NATIN</i></b></h2>
+
+    </div>
+
+  </div>
+
+  <!--  -->
+
+  <div class="w3-container w3-row-padding w3-padding-24 w3-black w3-mobile">
+
+    <h2><b>Pagtataya</b></h2>
+    <h4>Tula at Matalinghagang Pananalita</h4>
+
+  </div>
+
+  <!-- -->
+
+  <div class="w3-container w3-row-padding w3-padding-32 w3-white w3-mobile">
+
+    <h2 class="w3-margin-left">Panuto:</h2>
+    <h4 class="w3-margin-left">Basahin mabuti ang mga katanungan. Piliin ang pinakaakmang sagot.</h4>
+
+    <form class="w3-container" name="quiz" id="quiz">
+
+      <div class="w3-card-4 w3-mobile" style="width:100%;margin-top:40px">
+
+        <div class="w3-container w3-2017-primrose-yellow">
+          <h2>1. Ano ang kadalasang nakikita sa Tula na wala sa ibang uri ng Panitikan?</h2>
+        </div>
+
+        <div class="w3-container w3-margin-left">
+          <p><input class="w3-radio" type="radio" name="question1" value="1A">&nbsp;&nbsp;Saknong</p>
+          <p><input class="w3-radio" type="radio" name="question1" value="1B">&nbsp;&nbsp;Kuwento</p>
+          <p><input class="w3-radio" type="radio" name="question1" value="1C">&nbsp;&nbsp;Pangyayari</p>
+        </div>
+
+      </div>
+
+      <div class="w3-card-4 w3-mobile" style="width:100%;margin-top:40px">
+
+        <div class="w3-container w3-2017-primrose-yellow">
+          <h2>2. Ito ang tawag sa bilang ng pantig sa bawat taludtod. Ano ito?</h2>
+        </div>
+
+        <div class="w3-container w3-margin-left">
+
+          <p><input class="w3-radio" type="radio" name="question2" value="2A">&nbsp;&nbsp;Tugma</p>
+          <p><input class="w3-radio" type="radio" name="question2" value="2B">&nbsp;&nbsp;Kariktan</p>
+          <p><input class="w3-radio" type="radio" name="question2" value="2C">&nbsp;&nbsp;Sukat</p>
+        </div>
+
+      </div>
+
+      <div class="w3-card-4 w3-mobile" style="width:100%;margin-top:40px">
+
+        <div class="w3-container w3-2017-primrose-yellow">
+          <h2>3. Kung ang tugma sa huliahan ng tula ay nagtatapos sa a, e, i, o, u anong uri ng tugma ang tawag dito?</h2>
+        </div>
+
+        <div class="w3-container w3-margin-left">
+
+          <p><input class="w3-radio" type="radio" name="question3" value="3A">&nbsp;&nbsp;Tugmang Katinig</p>
+          <p><input class="w3-radio" type="radio" name="question3" value="3B">&nbsp;&nbsp;Tugmang Patinig</p>
+          <p><input class="w3-radio" type="radio" name="question3" value="3C">&nbsp;&nbsp;Tugmaan ng parehong titik</p>
+        </div>
+
+      </div>
+
+      <div class="w3-card-4 w3-mobile" style="width:100%;margin-top:40px">
+
+        <div class="w3-container w3-2017-primrose-yellow">
+          <h2>4.Ito ay tumutukoy sa bagay o gamit na mabubuo sa tulong ginawa o nabasa?</h2>
+        </div>
+
+        <div class="w3-container w3-margin-left">
+          <p><input class="w3-radio" type="radio" name="question4" value="4A">&nbsp;&nbsp;Kariktan</p>
+          <p><input class="w3-radio" type="radio" name="question4" value="4B">&nbsp;&nbsp;Simbolo</p>
+          <p><input class="w3-radio" type="radio" name="question4" value="4C">&nbsp;&nbsp;Saknong</p>
+        </div>
+
+      </div>
+
+      <div class="w3-card-4 w3-mobile" style="width:100%;margin-top:40px">
+
+        <div class="w3-container w3-2017-primrose-yellow">
+          <h2>5. <b>Tanggapin mo anak, itong munting guryon
+                  Na yari sa patpat at “papel de Hapon”
+                  Magandang laruan pula, puti, asul
+                  Na may pangalan mong sa gitna naroon.</b>
+
+            Ano ang ipinapakitang konsepto ng saknong na ito?</h2>
+        </div>
+
+        <div class="w3-container w3-margin-left">
+          <p><input class="w3-radio" type="radio" name="question5" value="5A">&nbsp;&nbsp;Ipinapakita sa saknong ang anak na gusto ng regalo</p>
+          <p><input class="w3-radio" type="radio" name="question5" value="5B">&nbsp;&nbsp;Ipinapakita sa saknong ang pagmamahal ng ama sa kanyang anak</p>
+          <p><input class="w3-radio" type="radio" name="question5" value="5C">&nbsp;&nbsp;Ipinapakita sa saknong ang kulay ng regalo</p>
+        </div>
+
+      </div>
+
+      <div class="w3-card-4 w3-mobile" style="width:100%;margin-top:40px">
+
+        <div class="w3-container w3-2017-primrose-yellow">
+          <h2>6. Ito ay mga pahayag na hindi tuwiran o 'di literal ang kahulugang taglay, ano ito?</h2>
+        </div>
+
+        <div class="w3-container w3-margin-left">
+          <p><input class="w3-radio" type="radio" name="question6" value="6A">&nbsp;&nbsp;Matalinghagang Pananlita</p>
+          <p><input class="w3-radio" type="radio" name="question6" value="6B">&nbsp;&nbsp;Kuwento</p>
+          <p><input class="w3-radio" type="radio" name="question6" value="6C">&nbsp;&nbsp;Sarsuwela</p>
+        </div>
+
+      </div>
+
+      <div class="w3-card-4 w3-mobile" style="width:100%;margin-top:40px">
+
+        <div class="w3-container w3-2017-primrose-yellow">
+          <h2>7.Anong uri ng Matalinghagang Pananlita ang "anak-pawis?</h2>
+        </div>
+
+        <div class="w3-container w3-margin-left">
+          <p><input class="w3-radio" type="radio" name="question7" value="7A">&nbsp;&nbsp;Tula</p>
+          <p><input class="w3-radio" type="radio" name="question7" value="7B">&nbsp;&nbsp;Tayutay</p>
+          <p><input class="w3-radio" type="radio" name="question7" value="7C">&nbsp;&nbsp;Idyoma</p>
+        </div>
+
+      </div>
+
+      <div class="w3-card-4 w3-mobile" style="width:100%;margin-top:40px">
+
+        <div class="w3-container w3-2017-primrose-yellow">
+          <h2>8. <b>Ang mata niya ay tulad ng diyamante sa sobrang kinang</b>. Aanong uri ng tayutay ito?</h2>
+        </div>
+
+        <div class="w3-container w3-margin-left">
+          <p><input class="w3-radio" type="radio" name="question8" value="8A">&nbsp;&nbsp;Hyperbole</p>
+          <p><input class="w3-radio" type="radio" name="question8" value="8B">&nbsp;&nbsp;Metapor</p>
+          <p><input class="w3-radio" type="radio" name="question8" value="8C">&nbsp;&nbsp;Simili</p>
+        </div>
+
+      </div>
+
+      <div class="w3-card-4 w3-mobile" style="width:100%;margin-top:40px">
+
+        <div class="w3-container w3-2017-primrose-yellow">
+          <h2>9. Ang kanyang ina ay may ginantuang puso sa mahihirap. Ano ang ibigsabihin ng idyomang ginintuang puso?</h2>
+        </div>
+
+        <div class="w3-container w3-margin-left">
+          <p><input class="w3-radio" type="radio" name="question9" value="9A">&nbsp;&nbsp;Pagkukunwari o hindi totoo</p>
+          <p><input class="w3-radio" type="radio" name="question9" value="9B">&nbsp;&nbsp;Mabuti ang kalooban</p>
+          <p><input class="w3-radio" type="radio" name="question9" value="9C">&nbsp;&nbsp;Maunawain</p>
+        </div>
+
+      </div>
+
+      <div class="w3-card-4 w3-mobile" style="width:100%;margin-top:40px">
+
+        <div class="w3-container w3-2017-primrose-yellow">
+          <h2>10. Ito ay uri ng Tayutay na nagpapakita ng pangungutya sa paraan ng pagbibigay puri?</h2>
+        </div>
+
+        <div class="w3-container w3-margin-left">
+          <p><input class="w3-radio" type="radio" name="question10" value="10A">&nbsp;&nbsp;Irony</p>
+          <p><input class="w3-radio" type="radio" name="question10" value="10B">&nbsp;&nbsp;Hyperbole</p>
+          <p><input class="w3-radio" type="radio" name="question10" value="10C">&nbsp;&nbsp;Personipikasyon</p>
+        </div>
+
+      </div>
+
+    </form>
+
+    <!-- Button for "Ipasa" -->
+    <div class="w3-container w3-padding-24">
+      <div class="w3-container w3-margin w3-mobile">
+        <button onclick="document.getElementById('id01').style.display='block', check1()"
+          class="w3-button w3-black w3-round-large w3-hover-amber w3-block">Ipasa</button>
+      </div>
+    </div>
+
+    <!-- Modal for "Result" -->
+    <div id="id01" class="w3-modal">
+
+      <div class="w3-modal-content w3-animate-top w3-card-4">
+
+        <header class="w3-container w3-2017-primrose-yellow">
+          <h2><b>Resulta</b></h2>
+        </header>
+
+        <div class="w3-container w3-center">
+          <p>Ang iyong marka ay </p>
+          <h1 id="result" class="w3-jumbo"></h1>
+          <p id="message"></p>
+        </div>
+
+        <footer class="w3-container w3-center w3-2017-primrose-yellow">
+
+          <div id="pass" class="w3-container w3-padding-16">
+            <a class="w3-button w3-black w3-hover-white w3-block" href="../aralin/aralinuno.html">Bumalik sa Aralin
+              1</a>
+          </div>
+
+          <div id="fail" class="w3-container w3-padding-16">
+            <a class="w3-button w3-black w3-hover-white w3-block"
+              href="../gramatikagawain/aralin1_gawain_gramatika_ulitin.html">Pantulong na Pagtataya</a>
+          </div>
+
+        </footer>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- End of page content -->
+
+  <!-- Footer -->
+  <div class="w3-black w3-container w3-padding-medium w3-bottom">
+    <h5>AHA'YKNOW</h5>
+  </div>
+
+
+  <!-- Scripts -->
+  <script type="text/javascript">
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+
+  </script>
+
+</body>
+
+</html>
